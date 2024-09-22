@@ -3,8 +3,14 @@ import React, {useState} from 'react';
 function MyComponent(){
     const [counter, setCounter] = useState(0);
     
+    
     function increment() {
-        setCounter(counter + 1);
+        setCounter(c=>c + 1);
+        setCounter(c=>c + 1);
+        setCounter(c=>c + 1);
+        
+        console.log(counter);
+        
     }
 
     function decrement() {
@@ -12,7 +18,7 @@ function MyComponent(){
     }
 
     function reset() {
-        console.log("Reset button double-clicked");
+      
         setCounter(0);
     }
     
@@ -26,10 +32,10 @@ function MyComponent(){
             <button onClick={decrement}>
                 Decrement
             </button>
-            <img onClick={reset} src="./src/assets/profile.jpg"></img>
-            <button onDoubleClick={()=>{
-                reset()
-            }}>
+           
+            <button onClick={
+                reset
+            }>
                 Reset
             </button>
         </div>
