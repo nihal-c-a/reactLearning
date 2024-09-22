@@ -4,6 +4,8 @@ import Button from "./Button";
 import Card from "./Card";
 import CarPicker from "./CarPicker";
 import ColorPicker from "./ColorPicker";
+import DigitalClock from "./DigitalClock";
+import Geometry from "./Geometry";
 import List from "./List";
 import MyComponent from "./MyComponent";
 import ObjectCars from "./ObjectCars";
@@ -18,7 +20,7 @@ import UserGreeting from "./UserGreeting";
 function App() {
   return(
    
-    <UseEffect/>
+    <DigitalClock/>
 
   );
 
