@@ -12,6 +12,7 @@ function Geometry() {
 
     function handleResize(){
         console.log(123);
+        
         setWidth(window.innerWidth);
         setHeight(window.innerHeight);
     }
